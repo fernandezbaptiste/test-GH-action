@@ -1,0 +1,10 @@
+{
+  "name": "bapfernandez/test-publish",
+  "version": "0.1.0",
+  "summary": "A simple test tile for demonstrating the tesslio/publish GitHub Action",
+  "skills": {
+    "hello-world": {
+      "path": "skills/hello-world/SKILL.md"
+    }
+  }
+}
