@@ -1,7 +1,7 @@
 {
   "name": "bapfernandez/test-publish",
-  "version": "0.5.0",
-  "summary": "A test tile for validating automated publishing, skill review evals, and CI/CD workflows via GitHub Actions",
+  "version": "0.6.0",
+  "summary": "A test tile with examples for validating automated publishing, skill review evals, and CI/CD workflows via GitHub Actions",
   "skills": {
     "hello-world": {
       "path": "skills/hello-world/SKILL.md"
