@@ -1,0 +1,16 @@
+{
+  "supported_languages": ["en", "fr", "es", "de", "ja"],
+  "default_language": "en",
+  "features": {
+    "personalized_greeting": true,
+    "include_time_of_day": true,
+    "suggest_related_tiles": true
+  },
+  "greetings": {
+    "en": "Hello! Welcome to the Tessl ecosystem.",
+    "fr": "Bonjour! Bienvenue dans l'écosystème Tessl.",
+    "es": "¡Hola! Bienvenido al ecosistema Tessl.",
+    "de": "Hallo! Willkommen im Tessl-Ökosystem.",
+    "ja": "こんにちは！Tesslエコシステムへようこそ。"
+  }
+}
