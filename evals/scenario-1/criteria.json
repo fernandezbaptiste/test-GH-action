@@ -1,0 +1,56 @@
+{
+  "context": "Tests whether the agent creates a personalized, friendly greeting that uses the user's name and introduces the Tessl ecosystem concepts of tiles and skills.",
+  "type": "weighted_checklist",
+  "checklist": [
+    {
+      "name": "Uses user's name",
+      "description": "The greeting function accepts a name parameter and includes it in the output message",
+      "max_score": 10
+    },
+    {
+      "name": "Name in output",
+      "description": "The demo script output shows the provided names (e.g. 'Alice', 'Kenji') embedded within the greeting text",
+      "max_score": 10
+    },
+    {
+      "name": "Friendly tone",
+      "description": "The greeting uses warm/friendly language — contains at least ONE of: 'welcome', 'glad', 'excited', 'happy', 'great to have you', 'hello'",
+      "max_score": 10
+    },
+    {
+      "name": "Mentions tiles",
+      "description": "The welcome message mentions 'tiles' as a concept",
+      "max_score": 10
+    },
+    {
+      "name": "Mentions skills",
+      "description": "The welcome message mentions 'skills' as a concept",
+      "max_score": 10
+    },
+    {
+      "name": "Mentions Tessl",
+      "description": "The welcome message mentions 'Tessl' by name",
+      "max_score": 10
+    },
+    {
+      "name": "Ecosystem explanation",
+      "description": "The message includes at least one sentence explaining what tiles or skills are or how they relate to each other",
+      "max_score": 10
+    },
+    {
+      "name": "Not generic hello",
+      "description": "The greeting is NOT just 'Hello <name>' — it contains additional substantive content beyond a one-line greeting",
+      "max_score": 10
+    },
+    {
+      "name": "Multiple demo names",
+      "description": "The demo script demonstrates the function with at least 2 different names",
+      "max_score": 10
+    },
+    {
+      "name": "Warm greeting keyword",
+      "description": "The output contains the word 'Hello' or a direct translation greeting word as part of the welcome",
+      "max_score": 10
+    }
+  ]
+}

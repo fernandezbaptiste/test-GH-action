@@ -1,0 +1,56 @@
+{
+  "context": "Tests whether the agent implements time-of-day awareness with distinct morning/afternoon/evening greetings, personalizes the message using the user's name, and maintains a friendly tone.",
+  "type": "weighted_checklist",
+  "checklist": [
+    {
+      "name": "Morning greeting",
+      "description": "The code contains a distinct greeting or message branch for morning (e.g. contains the word 'morning')",
+      "max_score": 10
+    },
+    {
+      "name": "Afternoon greeting",
+      "description": "The code contains a distinct greeting or message branch for afternoon (e.g. contains the word 'afternoon')",
+      "max_score": 10
+    },
+    {
+      "name": "Evening greeting",
+      "description": "The code contains a distinct greeting or message branch for evening (e.g. contains the word 'evening')",
+      "max_score": 10
+    },
+    {
+      "name": "Time detection logic",
+      "description": "The code reads the current system time (e.g. new Date(), Date.now(), or similar) to determine the time of day",
+      "max_score": 10
+    },
+    {
+      "name": "Name from CLI args",
+      "description": "The script reads the developer's name from command-line arguments (e.g. process.argv)",
+      "max_score": 10
+    },
+    {
+      "name": "Name in greeting",
+      "description": "The printed greeting includes the developer's name interpolated into the message",
+      "max_score": 10
+    },
+    {
+      "name": "Friendly language",
+      "description": "The greeting uses warm language — contains at least ONE of: 'hello', 'welcome', 'good', 'hi', 'hey', 'glad'",
+      "max_score": 10
+    },
+    {
+      "name": "Three time periods",
+      "description": "The code defines exactly 3 time-of-day periods (morning, afternoon, evening) — not 2 or 4+",
+      "max_score": 10
+    },
+    {
+      "name": "README time examples",
+      "description": "The README shows sample output for at least 2 different times of day",
+      "max_score": 10
+    },
+    {
+      "name": "Prints to stdout",
+      "description": "The greeting is printed to stdout using console.log or equivalent (not returned silently)",
+      "max_score": 10
+    }
+  ]
+}

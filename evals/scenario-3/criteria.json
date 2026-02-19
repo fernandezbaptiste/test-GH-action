@@ -1,0 +1,56 @@
+{
+  "context": "Tests whether the agent builds a greeting service that suggests related tiles or packages, supports multiple languages from config, and falls back to a default language for unsupported codes.",
+  "type": "weighted_checklist",
+  "checklist": [
+    {
+      "name": "Tile suggestions present",
+      "description": "The API response includes a field containing suggested or recommended tiles, packages, or tools",
+      "max_score": 10
+    },
+    {
+      "name": "Suggestions are list",
+      "description": "The recommendations are returned as an array/list of at least 2 items, not a single string",
+      "max_score": 10
+    },
+    {
+      "name": "Multiple languages in config",
+      "description": "The config file contains greeting strings for at least 3 different language codes",
+      "max_score": 10
+    },
+    {
+      "name": "Five languages supported",
+      "description": "The config or server supports exactly 5 languages: en, fr, es, de, ja",
+      "max_score": 10
+    },
+    {
+      "name": "English default fallback",
+      "description": "When an unsupported language code is requested, the server returns the English greeting rather than an error",
+      "max_score": 10
+    },
+    {
+      "name": "Language parameter accepted",
+      "description": "The greeting endpoint accepts a language/locale parameter (via query string, URL path, or Accept-Language header)",
+      "max_score": 10
+    },
+    {
+      "name": "JSON response format",
+      "description": "The endpoint returns responses in JSON format with a greeting field",
+      "max_score": 10
+    },
+    {
+      "name": "Config-driven greetings",
+      "description": "Greeting strings are loaded from the config file, not hardcoded in the route handler",
+      "max_score": 10
+    },
+    {
+      "name": "Unsupported code test",
+      "description": "The test script makes a request with an unsupported language code to demonstrate fallback behavior",
+      "max_score": 10
+    },
+    {
+      "name": "Greeting mentions Tessl",
+      "description": "At least one greeting string in the config references 'Tessl' or the 'Tessl ecosystem'",
+      "max_score": 10
+    }
+  ]
+}

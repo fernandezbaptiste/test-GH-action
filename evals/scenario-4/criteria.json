@@ -1,0 +1,56 @@
+{
+  "context": "Comprehensive test covering all major skill instructions: friendly greeting, ecosystem introduction, 5-language support with English default, personalization, time-of-day awareness, config-driven strings, and tile suggestions.",
+  "type": "weighted_checklist",
+  "checklist": [
+    {
+      "name": "Friendly greeting",
+      "description": "The page displays a greeting containing at least ONE of: 'Hello', 'Welcome', 'Hi' or their translations",
+      "max_score": 10
+    },
+    {
+      "name": "Five languages",
+      "description": "The config or code includes greeting support for exactly 5 languages: en, fr, es, de, ja",
+      "max_score": 10
+    },
+    {
+      "name": "English default",
+      "description": "English is set as the default or fallback language in config or code",
+      "max_score": 10
+    },
+    {
+      "name": "Name personalization",
+      "description": "The page includes a mechanism to accept a user's name (input field, URL param, or prompt) and display it in the greeting",
+      "max_score": 10
+    },
+    {
+      "name": "Time-of-day logic",
+      "description": "The JavaScript detects the current time and varies the greeting for at least morning vs. afternoon vs. evening",
+      "max_score": 10
+    },
+    {
+      "name": "Mentions tiles",
+      "description": "The page content or generated greeting mentions 'tiles' as a concept in the ecosystem",
+      "max_score": 10
+    },
+    {
+      "name": "Mentions skills",
+      "description": "The page content or generated greeting mentions 'skills' as a concept in the ecosystem",
+      "max_score": 10
+    },
+    {
+      "name": "Related tile suggestions",
+      "description": "The page includes a section or list suggesting related tiles, packages, or resources to explore",
+      "max_score": 10
+    },
+    {
+      "name": "Config-driven strings",
+      "description": "Greeting strings are stored in config.json and loaded dynamically, not hardcoded in HTML or app.js",
+      "max_score": 10
+    },
+    {
+      "name": "Tessl ecosystem reference",
+      "description": "The greeting or page content mentions 'Tessl' by name as the ecosystem or platform",
+      "max_score": 10
+    }
+  ]
+}

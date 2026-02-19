@@ -1,0 +1,56 @@
+{
+  "context": "Tests whether the agent implements multilingual greeting support with the correct 5 languages, uses config-driven greeting strings matching the skill's specified values, and defaults to English for unrecognized locales.",
+  "type": "weighted_checklist",
+  "checklist": [
+    {
+      "name": "English greeting string",
+      "description": "The English greeting contains 'Hello! Welcome to the Tessl ecosystem.' or a string closely matching the config-specified value",
+      "max_score": 10
+    },
+    {
+      "name": "French greeting string",
+      "description": "The French greeting contains 'Bonjour' and references Tessl or the ecosystem in French",
+      "max_score": 10
+    },
+    {
+      "name": "Spanish greeting string",
+      "description": "The Spanish greeting contains 'Hola' and references Tessl or the ecosystem in Spanish",
+      "max_score": 10
+    },
+    {
+      "name": "German greeting string",
+      "description": "The German greeting contains 'Hallo' and references Tessl or the ecosystem in German",
+      "max_score": 10
+    },
+    {
+      "name": "Japanese greeting string",
+      "description": "The Japanese greeting contains Japanese characters (e.g. こんにちは) and references Tessl",
+      "max_score": 10
+    },
+    {
+      "name": "Exactly five languages",
+      "description": "The configuration or module supports exactly the 5 languages: en, fr, es, de, ja — no more, no fewer",
+      "max_score": 10
+    },
+    {
+      "name": "Config-driven strings",
+      "description": "Greeting strings are stored in a config/data file (e.g. JSON) and loaded by the module, NOT hardcoded inline in function logic",
+      "max_score": 10
+    },
+    {
+      "name": "English as default",
+      "description": "When an unsupported language code is provided, the module falls back to the English greeting",
+      "max_score": 10
+    },
+    {
+      "name": "Default language specified",
+      "description": "The config or code explicitly identifies 'en' as the default language (via a field, constant, or comment)",
+      "max_score": 10
+    },
+    {
+      "name": "Fallback demonstration",
+      "description": "The test/demo script calls the function with at least one unsupported language code to demonstrate fallback behavior",
+      "max_score": 10
+    }
+  ]
+}

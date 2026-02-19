@@ -1,0 +1,52 @@
+{
+  "instructions": [
+    {
+      "instruction": "Greet the user with a friendly hello world message",
+      "original_snippets": "When invoked, greet the user with a friendly hello world message. ... it greets the user warmly",
+      "relevant_when": "When building any greeting or welcome feature",
+      "why_given": "reminder"
+    },
+    {
+      "instruction": "Introduce users to the concept of tiles, skills, and the Tessl ecosystem",
+      "original_snippets": "introduces them to the concept of tiles, skills, and the Tessl ecosystem ... Think of it as the \"hello world\" of tile development",
+      "relevant_when": "When creating onboarding or introductory content for developers",
+      "why_given": "new knowledge"
+    },
+    {
+      "instruction": "Support 5 languages: en, fr, es, de, ja",
+      "original_snippets": "\"supported_languages\": [\"en\", \"fr\", \"es\", \"de\", \"ja\"]",
+      "relevant_when": "When implementing multilingual or internationalization features",
+      "why_given": "particular preference"
+    },
+    {
+      "instruction": "Default language is English (en)",
+      "original_snippets": "\"default_language\": \"en\"",
+      "relevant_when": "When implementing language selection or fallback logic",
+      "why_given": "particular preference"
+    },
+    {
+      "instruction": "Support personalized greeting using the user's name",
+      "original_snippets": "\"personalized_greeting\": true",
+      "relevant_when": "When creating greeting messages that address individual users",
+      "why_given": "particular preference"
+    },
+    {
+      "instruction": "Include time-of-day awareness (morning/afternoon/evening)",
+      "original_snippets": "\"include_time_of_day\": true",
+      "relevant_when": "When generating greetings that should vary based on the current time",
+      "why_given": "particular preference"
+    },
+    {
+      "instruction": "Suggest related tiles to the user",
+      "original_snippets": "\"suggest_related_tiles\": true ... Suggest other tiles the user might find useful",
+      "relevant_when": "When building discovery or recommendation features in a developer portal",
+      "why_given": "particular preference"
+    },
+    {
+      "instruction": "Use specific greeting strings per language from config: en='Hello! Welcome to the Tessl ecosystem.', fr='Bonjour! Bienvenue dans l'ecosysteme Tessl.', es='Hola! Bienvenido al ecosistema Tessl.', de='Hallo! Willkommen im Tessl-Okosystem.', ja='Konnichiwa! Tessl ekoshisutemu e yokoso.'",
+      "original_snippets": "\"greetings\": { \"en\": \"Hello! Welcome to the Tessl ecosystem.\", \"fr\": \"Bonjour! Bienvenue dans l'écosystème Tessl.\", \"es\": \"¡Hola! Bienvenido al ecosistema Tessl.\", \"de\": \"Hallo! Willkommen im Tessl-Ökosystem.\", \"ja\": \"こんにちは！Tesslエコシステムへようこそ。\" }",
+      "relevant_when": "When implementing greeting message content in any language",
+      "why_given": "new knowledge"
+    }
+  ]
+}
