@@ -1,0 +1,12 @@
+{
+  "name": "test-gh-action",
+  "version": "0.8.0",
+  "description": "A multilingual greeting app with time-of-day awareness",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
